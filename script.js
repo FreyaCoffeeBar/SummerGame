@@ -118,18 +118,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         isXTurn = true;
     }
-
-    // Tam ekran modu için
-    function requestFullscreen(element) {
-        if (element.requestFullscreen) {
-            element.requestFullscreen();
-        } else if (element.webkitRequestFullscreen) { // Safari için
-            element.webkitRequestFullscreen();
-        } else if (element.msRequestFullscreen) { // IE11 için
-            element.msRequestFullscreen();
-        }
-    }
-
-    // Oyun başladığında tam ekran moduna geçmek için
-    requestFullscreen(document.documentElement);
 });
